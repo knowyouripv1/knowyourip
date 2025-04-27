@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know your IP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .ip {
+            font-size: 5rem;
+            color: red;
+        }
+        .warning {
+            font-size: 2rem;
+            color: black;
+        }
+        .protect-button {
+            font-size: 1.5rem;
+            color: white;
+            background-color: blue;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 20px;
+            display: inline-block;
+            border-radius: 20px;
+        }
+        .protect-button:hover {
+            background-color: darkblue;
+        }
+        .protected-message {
+            font-size: 1.5rem;
+            color: green;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="protected-message" id="protectedMessage" style="display: none;">You are protected with VPN or Proxy</div>
+        <div class="ip" id="ip">Cargando IP...</div>
+        <a href="https://mullvad.net" class="protect-button" target="_blank" id="protectButton">You want to protect your IP?</a>
+    </div>
+
+    <!-- SCRIPT JS -->
+    <script src="script.js"></script>
+</body>
+</html>
